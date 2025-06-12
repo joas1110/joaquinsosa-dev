@@ -184,3 +184,29 @@ footer {
   max-width: 500px;
   margin: 0 auto;
 }
+.cv-download {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  border-top: 2px solid #eee;
+}
+
+.cv-download h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.cv-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #00b894;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.cv-button:hover {
+  background-color: #019875;
+}
