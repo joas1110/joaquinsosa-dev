@@ -162,3 +162,25 @@ footer {
     padding: 10px;
     color: #007BFF;
 }
+.creative-project {
+  background-color: #fafafa;
+  padding: 40px 20px;
+  text-align: center;
+  border-top: 2px solid #ddd;
+}
+
+.creative-project img {
+  width: 250px;
+  max-width: 90%;
+  margin: 20px auto;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.creative-project p {
+  font-size: 1rem;
+  color: #444;
+  max-width: 500px;
+  margin: 0 auto;
+}
