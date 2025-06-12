@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mi Portfolio</title>
+  <link rel="stylesheet" href="portfolio.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Pablo Joaquín Enrique Sosa</h1>
+    <p>Jugador, creativo y ahora… programador web 💻</p>
+  </header>
+
+  <main>
+    <section class="presentacion">
+      <img src="foto.jpg" alt="Mi foto" class="foto">
+      <p>Soy un apasionado del básquet y la tecnología. En mi tiempo libre estoy aprendiendo desarrollo web para crear proyectos propios.</p>
+    </section>
+
+    <section class="habilidades">
+      <h2>Habilidades</h2>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Visual Studio Code</li>
+        <li>Buena onda 😄</li>
+      </ul>
+    </section>
+
+    <section class="contacto">
+      <h2>Contacto</h2>
+      <a href="https://www.instagram.com/joaquinsosa11" target="_blank">@joaquinsosa11</a><br>
+      <a href="mailto:joaquinregatas11@gmail.com">joaquinregatas11@gmail.com</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 - Hecho con mate y esfuerzo 🇦🇷🧉</p>
+  </footer>
+  <section class="tema">
+  <button onclick="cambiarTema()">Cambiar fondo</button>
+  <button onclick="toggleHabilidades()">Mostrar/Ocultar habilidades</button>
+
+</section>
+
+<script>
+  function cambiarTema() {
+    document.body.style.backgroundColor =
+      document.body.style.backgroundColor === 'white' ? '#f4f4f4' : 'white';
+  }
+  
+
+  function toggleHabilidades() {
+  const seccion = document.querySelector('.habilidades');
+  seccion.classList.toggle('oculto');
+}
+
+</script>
+
+</body>
+</html>

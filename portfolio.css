@@ -1,0 +1,147 @@
+/* ===== Reset básico ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* ===== Body ===== */
+body {
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 20px;
+}
+
+/* ===== Encabezado ===== */
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #0077cc;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* ===== Presentación ===== */
+.presentacion {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+  max-width: 700px;
+  margin: 0 auto 30px;
+  text-align: center;
+}
+
+.foto {
+  width: 200px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+/* ===== Habilidades ===== */
+.habilidades {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+  max-width: 700px;
+  margin: 0 auto 30px;
+}
+
+.habilidades h2 {
+  color: #0077cc;
+  margin-bottom: 10px;
+}
+
+.habilidades ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+.habilidades li {
+  margin-bottom: 5px;
+}
+
+/* ===== Contacto ===== */
+.contacto {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.contacto a {
+  text-decoration: none;
+  color: #0077cc;
+  margin: 0 10px;
+}
+
+.contacto a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Footer ===== */
+footer {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #888;
+}
+.tema {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.tema button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.tema button:hover {
+  background-color: #005fa3;
+}
+.habilidades {
+  transition: opacity 0.5s ease;
+}
+
+.habilidades.oculto {
+  opacity: 0;
+  pointer-events: none;
+  height: 0;
+  overflow: hidden;
+}
+.habilidades {
+  transition: opacity 0.5s ease;
+}
+
+.habilidades.oculto {
+  opacity: 0;
+  pointer-events: none;
+  height: 0;
+  overflow: hidden;
+}
+.contacto p {
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+
+.contacto a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+.contacto a:hover {
+  text-decoration: underline;
+}
