@@ -8,9 +8,11 @@
 
 /* ===== Body ===== */
 body {
-  background-color: #f4f4f4;
-  color: #333;
-  padding: 20px;
+   font-family: 'Poppins', sans-serif;
+    background-color: #f5f7fa; /* gris clarito */
+    color: #333; /* gris oscuro, buena lectura */
+    margin: 0;
+    padding: 0;
 }
 
 /* ===== Encabezado ===== */
@@ -144,4 +146,19 @@ footer {
 
 .contacto a:hover {
   text-decoration: underline;
+}
+.margen {
+    background-color: #ffffff;
+    border: 2px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+.color {
+    border-style: solid;
+    border-color: #007BFF; /* azul moderno */
+    border-radius: 8px;
+    border-width: 3px;
+    padding: 10px;
+    color: #007BFF;
 }
