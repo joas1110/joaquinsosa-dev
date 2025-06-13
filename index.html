@@ -37,6 +37,23 @@
 
   </header>
 
+<script>
+  // Al cargar, aplicar el modo guardado si existe
+  if (localStorage.getItem("tema") === "oscuro") {
+    document.body.classList.add("dark-theme");
+  }
+
+  // Botón para cambiar tema
+  const button = document.getElementById("toggle-theme");
+  button.addEventListener("click", () => {
+    document.body.classList.toggle("dark-theme");
+    const temaActual = document.body.classList.contains("dark-theme") ? "oscuro" : "claro";
+    localStorage.setItem("tema", temaActual);
+  });
+</script>
+
+<button id="toggle-theme">🌙 Cambiar tema</button>
+
   <main>
     <section class="presentacion">
       <img src="foto.jpg" alt="Mi foto" class="foto">
@@ -77,20 +94,7 @@
 }
 
 </script>
-<script>
-  // Al cargar, aplicar el modo guardado si existe
-  if (localStorage.getItem("tema") === "oscuro") {
-    document.body.classList.add("dark-theme");
-  }
 
-  // Botón para cambiar tema
-  const button = document.getElementById("toggle-theme");
-  button.addEventListener("click", () => {
-    document.body.classList.toggle("dark-theme");
-    const temaActual = document.body.classList.contains("dark-theme") ? "oscuro" : "claro";
-    localStorage.setItem("tema", temaActual);
-  });
-</script>
 </body>
-<button id="toggle-theme">🌙 Cambiar tema</button>
+
 </html>
