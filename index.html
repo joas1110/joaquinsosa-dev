@@ -38,6 +38,7 @@
   </form>
 </section>
 <body>
+  <div id="particles-js"></div>
   <header>
     <h1>Pablo Joaquín Enrique Sosa</h1>
     <p>Jugador, creativo y ahora… programador web 💻</p>
@@ -134,7 +135,7 @@ form.addEventListener("submit", async (e) => {
     scrollProgress.style.width = `${progress}%`;
   });
 </script>
-<script src="particles.min.js"></script>
+<script src="./particles.min.js"></script>
 <script>
   particlesJS.load('particles-js', 'particles.json', function() {
     console.log('Particles.js loaded');
@@ -161,7 +162,6 @@ form.addEventListener("submit", async (e) => {
   };
 </script>
 <button id="topBtn" title="Volver arriba">⬆️</button>
-<div id="particles-js"></div>
 </body>
 <div id="scroll-progress"></div>
 </html>
