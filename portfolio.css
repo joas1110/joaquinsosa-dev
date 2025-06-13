@@ -210,3 +210,15 @@ footer {
 .cv-button:hover {
   background-color: #019875;
 }
+
+body {
+  background: linear-gradient(to right, #e0eafc, #cfdef3);
+  min-height: 100vh;
+}
+
+section {
+  padding: 40px 20px;
+  margin: 0 auto;
+  max-width: 900px;
+  text-align: center;
+}
