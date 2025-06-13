@@ -268,3 +268,38 @@ section {
 .contact-form button:hover {
   background-color: #019875;
 }
+
+#toggle-theme {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px 16px;
+  font-size: 1rem;
+  background-color: #0077b6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+#toggle-theme:hover {
+  background-color: #023e8a;
+}
+
+.dark-theme {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+.dark-theme .cv-button,
+.dark-theme .project-img,
+.dark-theme a,
+.dark-theme p,
+.dark-theme h1,
+.dark-theme h2,
+.dark-theme h3,
+.dark-theme h4 {
+  filter: brightness(0.9);
+}
