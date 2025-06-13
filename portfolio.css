@@ -339,3 +339,36 @@ section {
 .dark-theme img {
   filter: brightness(0.9);
 }
+
+/* === MODO OSCURO === */
+.dark-theme {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+.dark-theme h1,
+.dark-theme h2,
+.dark-theme h3,
+.dark-theme p,
+.dark-theme li,
+.dark-theme a {
+  color: #f1f1f1;
+}
+
+.dark-theme .margen {
+  background-color: #1e1e1e;
+  border-color: #333;
+}
+
+.dark-theme .creative-project {
+  background-color: #1e1e1e;
+  border-top-color: #444;
+}
+
+.dark-theme .creative-project p {
+  color: #ccc;
+}
+
+.dark-theme img {
+  filter: brightness(0.9);
+}
