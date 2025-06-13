@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <head>
   <meta charset="UTF-8">
   <title>Joaquín Sosa | Programador Web y Jugador Profesional</title>
@@ -36,13 +37,11 @@
     <p>¡Ahora también subido a GitHub !</p>
 
   </header>
-
   <main>
     <section class="presentacion">
       <img src="foto.jpg" alt="Mi foto" class="foto">
       <p>Soy un apasionado del básquet y la tecnología. En mi tiempo libre estoy aprendiendo desarrollo web para crear proyectos propios.</p>
     </section>
-
     <section class="habilidades">
       <h2>Habilidades</h2>
       <ul>
@@ -52,34 +51,26 @@
         <li>Buena onda 😄</li>
       </ul>
     </section>
-
     <section class="contacto">
       <h2>Contacto</h2>
       <a href="https://www.instagram.com/joaquinsosa11" target="_blank">@joaquinsosa11</a><br>
       <a href="mailto:joaquinregatas11@gmail.com">joaquinregatas11@gmail.com</a>
     </section>
   </main>
-
   <footer>
     <p>© 2025 - Hecho con mate y esfuerzo 🇦🇷🧉</p>
   </footer>
   <section class="tema">
-  
   <button onclick="toggleHabilidades()">Mostrar/Ocultar habilidades</button>
-
 </section>
-
 <script>
- 
   function toggleHabilidades() {
   const seccion = document.querySelector('.habilidades');
   seccion.classList.toggle('oculto');
 }
 
 </script>
-
 <button id="toggle-theme">🌗 Cambiar tema</button>
-
 <script>
   // Al cargar, aplicar el modo guardado si existe
   if (localStorage.getItem("tema") === "oscuro") {
@@ -94,13 +85,10 @@
     localStorage.setItem("tema", temaActual);
   });
 </script>
-
 <div class="social-floating">
-  <a href="https://www.instagram.com/joaquinsosa11" target="_blank">📸</a>
-  <a href="mailto:joaquinregatas11@gmail.com" target="_blank">📧</a>
-  <a href="https://github.com/joas1110" target="_blank">🐙</a>
+  <a href="https://www.instagram.com/joaquinsosa11" target="_blank"><i class="fab fa-instagram"></i></a>
+  <a href="mailto:joaquinregatas11@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+  <a href="https://github.com/joas1110" target="_blank"><i class="fab fa-github"></i></a>
 </div>
-
 </body>
-
 </html>
