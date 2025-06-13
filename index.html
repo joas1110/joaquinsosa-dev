@@ -11,22 +11,23 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 </head>
-<section class="creative-project">
+<section class="creative-project" data-aos="fade-up">
   <h2>🧃 Zona Power – Proyecto Creativo</h2>
  <img src="bebida.jpg" alt="Diseño creativo Zona Power" class="project-img">
   <p>Diseño ficticio de una bebida energética con estética deportiva y minimalista. Proyecto orientado a branding y creatividad visual.</p>
 </section>
-<section class="creative-project">
+<section class="creative-project" data-aos="fade-up">
   <h2>🤖 IA Deportiva – Proyecto Visual</h2>
   <img src="ia-deportiva.png" alt="Diseño IA Deportiva" class="project-img">
   <p>Diseño conceptual de una inteligencia artificial orientada al rendimiento deportivo. Inspirado en atletas de alto nivel, tecnología y ciencia de datos.</p>
 </section>
-<section class="cv-download">
+<section class="cv-download" data-aos="fade-up">
   <h2>📄 Descargar CV</h2>
   <a href="CV_JoaquinSosa_COMPLETO.pdf" download class="cv-button">Descargar PDF</a>
 </section>
-<section class="contact-form" id="contacto">
+<section class="contact-form" id="contacto" data-aos="fade-up">
   <h2>📩 Contacto</h2>
   <form id="form" action="https://formspree.io/f/xwpbodgb" method="POST">
     <input type="text" name="name" placeholder="Tu nombre" required />
@@ -44,11 +45,11 @@
 
   </header>
   <main>
-    <section class="presentacion">
+    <section class="presentacion" data-aos="fade-up">
       <img src="foto.jpg" alt="Mi foto" class="foto">
       <p>Soy un apasionado del básquet y la tecnología. En mi tiempo libre estoy aprendiendo desarrollo web para crear proyectos propios.</p>
     </section>
-    <section class="habilidades">
+    <section class="habilidades" data-aos="fade-up">
       <h2>Habilidades</h2>
       <ul>
         <li>HTML</li>
@@ -121,5 +122,18 @@ form.addEventListener("submit", async (e) => {
   }
 });
 </script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<script>
+  window.addEventListener("scroll", () => {
+    const scrollProgress = document.getElementById("scroll-progress");
+    const totalHeight = document.body.scrollHeight - window.innerHeight;
+    const progress = (window.scrollY / totalHeight) * 100;
+    scrollProgress.style.width = `${progress}%`;
+  });
+</script>
 </body>
+<div id="scroll-progress"></div>
 </html>

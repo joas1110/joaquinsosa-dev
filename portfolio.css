@@ -426,3 +426,14 @@ section {
 .form-status.error {
   color: red;
 }
+
+#scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 5px;
+  background: #007bff;
+  width: 0%;
+  z-index: 9999;
+  transition: width 0.25s ease-out;
+}
