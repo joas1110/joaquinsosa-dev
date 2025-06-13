@@ -28,11 +28,12 @@
 </section>
 <section class="contact-form">
   <h2>📬 Contacto</h2>
- <form action="https://formspree.io/f/xwpbodgb" method="POST">
+ <form id="contact-form" action="https://formspree.io/f/xwpbodgb" method="POST">
   <input type="text" name="name" placeholder="Tu nombre" required>
   <input type="email" name="email" placeholder="Tu correo" required>
   <textarea name="message" placeholder="Tu mensaje" rows="4" required></textarea>
   <button type="submit">Enviar</button>
+  <p id="form-status" class="form-status"></p>
 </form>
 </section>
 <body>
@@ -95,5 +96,30 @@
   <a href="mailto:joaquinregatas11@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
   <a href="https://github.com/joas1110" target="_blank"><i class="fab fa-github"></i></a>
 </div>
+<script>
+  const form = document.getElementById('contact-form');
+  const status = document.getElementById('form-status');
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const data = new FormData(form);
+    const response = await fetch(form.action, {
+      method: form.method,
+      body: data,
+      headers: {
+        'Accept': 'application/json'
+      }
+    });
+
+    if (response.ok) {
+      status.textContent = "✅ ¡Mensaje enviado! Gracias por contactarme.";
+      status.style.color = "green";
+      form.reset();
+    } else {
+      status.textContent = "❌ Ocurrió un error. Intentá de nuevo.";
+      status.style.color = "red";
+    }
+  });
+</script>
 </body>
 </html>
