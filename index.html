@@ -134,6 +134,34 @@ form.addEventListener("submit", async (e) => {
     scrollProgress.style.width = `${progress}%`;
   });
 </script>
+<script src="particles.min.js"></script>
+<script>
+  particlesJS.load('particles-js', 'particles.json', function() {
+    console.log('Particles.js loaded');
+  });
+</script>
+<script>
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
+</script>
+<script>
+  const topBtn = document.getElementById("topBtn");
+  window.onscroll = function() {
+    topBtn.style.display = (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) ? "block" : "none";
+  };
+  topBtn.onclick = function() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  };
+</script>
+<button id="topBtn" title="Volver arriba">⬆️</button>
 </body>
+<div id="particles-js"></div>
 <div id="scroll-progress"></div>
 </html>
